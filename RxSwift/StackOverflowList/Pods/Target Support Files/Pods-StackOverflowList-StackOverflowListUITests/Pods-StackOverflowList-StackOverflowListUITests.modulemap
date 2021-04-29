@@ -1,0 +1,6 @@
+framework module Pods_StackOverflowList_StackOverflowListUITests {
+  umbrella header "Pods-StackOverflowList-StackOverflowListUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
