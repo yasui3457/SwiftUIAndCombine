@@ -6,7 +6,7 @@ SwiftUIとCombineから見るMVVM
 
 StackOverflowの検索結果を、ただ表示するだけの画面。
 
-![screen_sample](https://github.com/yasui3457/SwiftUIAndCombine/commits/master/Other/SwiftUIAndCombine.gif?raw=true)
+![screen_sample](Other/SwiftUIAndCombine.gif)
 
 # フォルダ構成
 
