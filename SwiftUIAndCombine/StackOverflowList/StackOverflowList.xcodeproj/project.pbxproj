@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A00489F4263B9C2E008F5BF2 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00489F3263B9C2E008F5BF2 /* ListView.swift */; };
+		A00489FC263B9E9B008F5BF2 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00489FB263B9E9B008F5BF2 /* Row.swift */; };
+		A0048A02263B9EFE008F5BF2 /* StackOverflowData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0048A01263B9EFE008F5BF2 /* StackOverflowData.swift */; };
 		A0916DB9263B714900C097E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0916DB8263B714900C097E3 /* AppDelegate.swift */; };
 		A0916DBB263B714900C097E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0916DBA263B714900C097E3 /* SceneDelegate.swift */; };
 		A0916DBD263B714900C097E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0916DBC263B714900C097E3 /* ContentView.swift */; };
@@ -15,6 +18,8 @@
 		A0916DC5263B714A00C097E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0916DC3263B714A00C097E3 /* LaunchScreen.storyboard */; };
 		A0916DD0263B714B00C097E3 /* StackOverflowListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0916DCF263B714B00C097E3 /* StackOverflowListTests.swift */; };
 		A0916DDB263B714B00C097E3 /* StackOverflowListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0916DDA263B714B00C097E3 /* StackOverflowListUITests.swift */; };
+		A0A2649A263BA0A3007C5101 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A26499263BA0A3007C5101 /* ModelData.swift */; };
+		A0A2649F263BA8CA007C5101 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = A0A2649E263BA8CA007C5101 /* data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A00489F3263B9C2E008F5BF2 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		A00489FB263B9E9B008F5BF2 /* Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
+		A0048A01263B9EFE008F5BF2 /* StackOverflowData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverflowData.swift; sourceTree = "<group>"; };
 		A0916DB5263B714900C097E3 /* StackOverflowList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackOverflowList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0916DB8263B714900C097E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0916DBA263B714900C097E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +57,8 @@
 		A0916DD6263B714B00C097E3 /* StackOverflowListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackOverflowListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0916DDA263B714B00C097E3 /* StackOverflowListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverflowListUITests.swift; sourceTree = "<group>"; };
 		A0916DDC263B714B00C097E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0A26499263BA0A3007C5101 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		A0A2649E263BA8CA007C5101 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +86,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A00489F2263B9C08008F5BF2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A0916DBC263B714900C097E3 /* ContentView.swift */,
+				A00489FB263B9E9B008F5BF2 /* Row.swift */,
+				A00489F3263B9C2E008F5BF2 /* ListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A0048A00263B9EDB008F5BF2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A0048A01263B9EFE008F5BF2 /* StackOverflowData.swift */,
+				A0A26499263BA0A3007C5101 /* ModelData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		A0916DAC263B714900C097E3 = {
 			isa = PBXGroup;
 			children = (
@@ -101,7 +130,9 @@
 			children = (
 				A0916DB8263B714900C097E3 /* AppDelegate.swift */,
 				A0916DBA263B714900C097E3 /* SceneDelegate.swift */,
-				A0916DBC263B714900C097E3 /* ContentView.swift */,
+				A0048A00263B9EDB008F5BF2 /* Model */,
+				A00489F2263B9C08008F5BF2 /* View */,
+				A0A2649B263BA0E4007C5101 /* Resources */,
 				A0916DBE263B714A00C097E3 /* Assets.xcassets */,
 				A0916DC3263B714A00C097E3 /* LaunchScreen.storyboard */,
 				A0916DC6263B714A00C097E3 /* Info.plist */,
@@ -134,6 +165,14 @@
 				A0916DDC263B714B00C097E3 /* Info.plist */,
 			);
 			path = StackOverflowListUITests;
+			sourceTree = "<group>";
+		};
+		A0A2649B263BA0E4007C5101 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A0A2649E263BA8CA007C5101 /* data.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +281,7 @@
 				A0916DC5263B714A00C097E3 /* LaunchScreen.storyboard in Resources */,
 				A0916DC2263B714A00C097E3 /* Preview Assets.xcassets in Resources */,
 				A0916DBF263B714A00C097E3 /* Assets.xcassets in Resources */,
+				A0A2649F263BA8CA007C5101 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,9 +306,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A00489F4263B9C2E008F5BF2 /* ListView.swift in Sources */,
 				A0916DB9263B714900C097E3 /* AppDelegate.swift in Sources */,
+				A0048A02263B9EFE008F5BF2 /* StackOverflowData.swift in Sources */,
 				A0916DBB263B714900C097E3 /* SceneDelegate.swift in Sources */,
+				A00489FC263B9E9B008F5BF2 /* Row.swift in Sources */,
 				A0916DBD263B714900C097E3 /* ContentView.swift in Sources */,
+				A0A2649A263BA0A3007C5101 /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
