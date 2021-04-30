@@ -7,7 +7,7 @@
 
 import Foundation
 
-var stackOverflowDatas: [StackOverflowData] = load("data.json")
+var stackOverflowDatas: StackOverflowDatas = load("data.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

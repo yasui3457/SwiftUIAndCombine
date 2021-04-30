@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct ListView: View {
-    @ObservedObject private var vm = ListViewModel()
+    @ObservedObject private var vm = ListViewModel(articleFetcher: ArticleFetcher())
     
     var body: some View {
         NavigationView{
             VStack {
                 // List部分
-                List(vm.list, id: \.id) { data in
+                List(vm.list, id: \.question_id) { data in
                     Row(data: data)
                 }
                 // 検索部分

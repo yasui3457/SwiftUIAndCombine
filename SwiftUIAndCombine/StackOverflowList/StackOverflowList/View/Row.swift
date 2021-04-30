@@ -18,7 +18,7 @@ struct Row: View {
                 Spacer()
             }
             HStack {
-                Text(data.url)
+                Text(data.link)
                 Spacer()
             }
         }
@@ -28,9 +28,9 @@ struct Row: View {
 struct Row_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            Row(data: stackOverflowDatas[0])
+            Row(data: stackOverflowDatas.items[0])
                 .previewLayout(.fixed(width: 300, height: 70))
-            Row(data: stackOverflowDatas[1])
+            Row(data: stackOverflowDatas.items[1])
                 .previewLayout(.fixed(width: 300, height: 70))
         }
     }

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		A00489F4263B9C2E008F5BF2 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00489F3263B9C2E008F5BF2 /* ListView.swift */; };
 		A00489FC263B9E9B008F5BF2 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00489FB263B9E9B008F5BF2 /* Row.swift */; };
-		A0048A02263B9EFE008F5BF2 /* StackOverflowData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0048A01263B9EFE008F5BF2 /* StackOverflowData.swift */; };
+		A0048A02263B9EFE008F5BF2 /* StackOverflowDatas.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0048A01263B9EFE008F5BF2 /* StackOverflowDatas.swift */; };
 		A0916DB9263B714900C097E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0916DB8263B714900C097E3 /* AppDelegate.swift */; };
 		A0916DBB263B714900C097E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0916DBA263B714900C097E3 /* SceneDelegate.swift */; };
 		A0916DBD263B714900C097E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0916DBC263B714900C097E3 /* ContentView.swift */; };
@@ -21,6 +21,9 @@
 		A0A2649A263BA0A3007C5101 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A26499263BA0A3007C5101 /* ModelData.swift */; };
 		A0A2649F263BA8CA007C5101 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = A0A2649E263BA8CA007C5101 /* data.json */; };
 		A0A264A2263BACB9007C5101 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A264A1263BACB9007C5101 /* ListViewModel.swift */; };
+		A0A264A8263BB9B9007C5101 /* ArticleFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A264A7263BB9B9007C5101 /* ArticleFetcher.swift */; };
+		A0A264AA263BEB8C007C5101 /* StackOverflowError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A264A9263BEB8C007C5101 /* StackOverflowError.swift */; };
+		A0A264AC263BEE9E007C5101 /* Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A264AB263BEE9E007C5101 /* Parsing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +46,7 @@
 /* Begin PBXFileReference section */
 		A00489F3263B9C2E008F5BF2 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		A00489FB263B9E9B008F5BF2 /* Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
-		A0048A01263B9EFE008F5BF2 /* StackOverflowData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverflowData.swift; sourceTree = "<group>"; };
+		A0048A01263B9EFE008F5BF2 /* StackOverflowDatas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverflowDatas.swift; sourceTree = "<group>"; };
 		A0916DB5263B714900C097E3 /* StackOverflowList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackOverflowList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0916DB8263B714900C097E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0916DBA263B714900C097E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +64,9 @@
 		A0A26499263BA0A3007C5101 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		A0A2649E263BA8CA007C5101 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		A0A264A1263BACB9007C5101 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		A0A264A7263BB9B9007C5101 /* ArticleFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleFetcher.swift; sourceTree = "<group>"; };
+		A0A264A9263BEB8C007C5101 /* StackOverflowError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverflowError.swift; sourceTree = "<group>"; };
+		A0A264AB263BEE9E007C5101 /* Parsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +107,10 @@
 		A0048A00263B9EDB008F5BF2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A0048A01263B9EFE008F5BF2 /* StackOverflowData.swift */,
+				A0048A01263B9EFE008F5BF2 /* StackOverflowDatas.swift */,
+				A0A264A9263BEB8C007C5101 /* StackOverflowError.swift */,
+				A0A264A7263BB9B9007C5101 /* ArticleFetcher.swift */,
+				A0A264AB263BEE9E007C5101 /* Parsing.swift */,
 				A0A26499263BA0A3007C5101 /* ModelData.swift */,
 			);
 			path = Model;
@@ -319,10 +328,13 @@
 			files = (
 				A00489F4263B9C2E008F5BF2 /* ListView.swift in Sources */,
 				A0916DB9263B714900C097E3 /* AppDelegate.swift in Sources */,
-				A0048A02263B9EFE008F5BF2 /* StackOverflowData.swift in Sources */,
+				A0048A02263B9EFE008F5BF2 /* StackOverflowDatas.swift in Sources */,
 				A0916DBB263B714900C097E3 /* SceneDelegate.swift in Sources */,
+				A0A264A8263BB9B9007C5101 /* ArticleFetcher.swift in Sources */,
 				A00489FC263B9E9B008F5BF2 /* Row.swift in Sources */,
 				A0916DBD263B714900C097E3 /* ContentView.swift in Sources */,
+				A0A264AC263BEE9E007C5101 /* Parsing.swift in Sources */,
+				A0A264AA263BEB8C007C5101 /* StackOverflowError.swift in Sources */,
 				A0A264A2263BACB9007C5101 /* ListViewModel.swift in Sources */,
 				A0A2649A263BA0A3007C5101 /* ModelData.swift in Sources */,
 			);
