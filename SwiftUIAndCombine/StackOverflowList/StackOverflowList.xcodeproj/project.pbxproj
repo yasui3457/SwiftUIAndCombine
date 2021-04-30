@@ -20,6 +20,7 @@
 		A0916DDB263B714B00C097E3 /* StackOverflowListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0916DDA263B714B00C097E3 /* StackOverflowListUITests.swift */; };
 		A0A2649A263BA0A3007C5101 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A26499263BA0A3007C5101 /* ModelData.swift */; };
 		A0A2649F263BA8CA007C5101 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = A0A2649E263BA8CA007C5101 /* data.json */; };
+		A0A264A2263BACB9007C5101 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A264A1263BACB9007C5101 /* ListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		A0916DDC263B714B00C097E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0A26499263BA0A3007C5101 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		A0A2649E263BA8CA007C5101 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		A0A264A1263BACB9007C5101 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 				A0916DBA263B714900C097E3 /* SceneDelegate.swift */,
 				A0048A00263B9EDB008F5BF2 /* Model */,
 				A00489F2263B9C08008F5BF2 /* View */,
+				A0A264A0263BAC65007C5101 /* ViewModel */,
 				A0A2649B263BA0E4007C5101 /* Resources */,
 				A0916DBE263B714A00C097E3 /* Assets.xcassets */,
 				A0916DC3263B714A00C097E3 /* LaunchScreen.storyboard */,
@@ -173,6 +176,14 @@
 				A0A2649E263BA8CA007C5101 /* data.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		A0A264A0263BAC65007C5101 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A0A264A1263BACB9007C5101 /* ListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,6 +323,7 @@
 				A0916DBB263B714900C097E3 /* SceneDelegate.swift in Sources */,
 				A00489FC263B9E9B008F5BF2 /* Row.swift in Sources */,
 				A0916DBD263B714900C097E3 /* ContentView.swift in Sources */,
+				A0A264A2263BACB9007C5101 /* ListViewModel.swift in Sources */,
 				A0A2649A263BA0A3007C5101 /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

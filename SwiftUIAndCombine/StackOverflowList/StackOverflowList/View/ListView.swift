@@ -8,11 +8,21 @@
 import SwiftUI
 
 struct ListView: View {
+    @ObservedObject private var vm = ListViewModel()
+    
     var body: some View {
         NavigationView{
-            List(stackOverflowDatas, id: \.id) { data in
-                Row(data: data)
+            VStack {
+                // List部分
+                List(vm.list, id: \.id) { data in
+                    Row(data: data)
+                }
+                // 検索部分
+                TextField("検索したい内容を入力してください", text: $vm.searchText)
+                    .font(.none)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
             }
+            // NavigationBarのTitle
             .navigationBarTitle("Stack Overflow List")
         }
     }
