@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A08C564F263CE3AA0016E171 /* StackOverflowDatas.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08C564E263CE3AA0016E171 /* StackOverflowDatas.swift */; };
+		A08C5651263CE6110016E171 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A08C5650263CE6110016E171 /* CustomTableViewCell.xib */; };
+		A08C5653263CE6B50016E171 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08C5652263CE6B50016E171 /* CustomTableViewCell.swift */; };
 		A0916D2C263B6F1E00C097E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0916D2B263B6F1E00C097E3 /* AppDelegate.swift */; };
 		A0916D2E263B6F1E00C097E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0916D2D263B6F1E00C097E3 /* SceneDelegate.swift */; };
 		A0916D30263B6F1E00C097E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0916D2F263B6F1E00C097E3 /* ViewController.swift */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A08C564E263CE3AA0016E171 /* StackOverflowDatas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverflowDatas.swift; sourceTree = "<group>"; };
+		A08C5650263CE6110016E171 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		A08C5652263CE6B50016E171 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		A0916D28263B6F1E00C097E3 /* StackOverflowList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackOverflowList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0916D2B263B6F1E00C097E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0916D2D263B6F1E00C097E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +107,9 @@
 			children = (
 				A0916D2B263B6F1E00C097E3 /* AppDelegate.swift */,
 				A0916D2D263B6F1E00C097E3 /* SceneDelegate.swift */,
+				A08C5650263CE6110016E171 /* CustomTableViewCell.xib */,
+				A08C5652263CE6B50016E171 /* CustomTableViewCell.swift */,
+				A08C564E263CE3AA0016E171 /* StackOverflowDatas.swift */,
 				A0916D2F263B6F1E00C097E3 /* ViewController.swift */,
 				A0916D31263B6F1E00C097E3 /* Main.storyboard */,
 				A0916D34263B6F1F00C097E3 /* Assets.xcassets */,
@@ -233,6 +242,7 @@
 			files = (
 				A0916D38263B6F1F00C097E3 /* LaunchScreen.storyboard in Resources */,
 				A0916D35263B6F1F00C097E3 /* Assets.xcassets in Resources */,
+				A08C5651263CE6110016E171 /* CustomTableViewCell.xib in Resources */,
 				A0916D33263B6F1E00C097E3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,7 +269,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0916D30263B6F1E00C097E3 /* ViewController.swift in Sources */,
+				A08C5653263CE6B50016E171 /* CustomTableViewCell.swift in Sources */,
 				A0916D2C263B6F1E00C097E3 /* AppDelegate.swift in Sources */,
+				A08C564F263CE3AA0016E171 /* StackOverflowDatas.swift in Sources */,
 				A0916D2E263B6F1E00C097E3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

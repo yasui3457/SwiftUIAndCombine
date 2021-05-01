@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="qtQ-EZ-Tx7" customClass="CustomTableViewCell" customModule="StackOverflowList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="500" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qtQ-EZ-Tx7" id="JnO-hl-xKY">
+                <rect key="frame" x="0.0" y="0.0" width="500" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ze-8L-eAq">
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="17"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="url" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9SV-0v-DfD">
+                        <rect key="frame" x="0.0" y="17" width="500" height="83"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="textColor" systemColor="labelColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="9SV-0v-DfD" secondAttribute="bottom" id="8MF-xo-G2p"/>
+                    <constraint firstAttribute="trailing" secondItem="9ze-8L-eAq" secondAttribute="trailing" id="HYn-qP-uwc"/>
+                    <constraint firstItem="9ze-8L-eAq" firstAttribute="leading" secondItem="JnO-hl-xKY" secondAttribute="leading" id="JFB-du-2Kg"/>
+                    <constraint firstItem="9ze-8L-eAq" firstAttribute="top" secondItem="JnO-hl-xKY" secondAttribute="top" id="OCu-gC-enZ"/>
+                    <constraint firstItem="9SV-0v-DfD" firstAttribute="leading" secondItem="JnO-hl-xKY" secondAttribute="leading" id="RuZ-1A-de6"/>
+                    <constraint firstItem="9SV-0v-DfD" firstAttribute="top" secondItem="9ze-8L-eAq" secondAttribute="bottom" id="aEz-5I-8hd"/>
+                    <constraint firstAttribute="trailing" secondItem="9SV-0v-DfD" secondAttribute="trailing" id="ut7-P4-4x2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="title" destination="9ze-8L-eAq" id="UUi-9S-Twv"/>
+                <outlet property="url" destination="9SV-0v-DfD" id="XOo-0X-gzu"/>
+            </connections>
+            <point key="canvasLocation" x="-2086.9565217391305" y="-455.35714285714283"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
