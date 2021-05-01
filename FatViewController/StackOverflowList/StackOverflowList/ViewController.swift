@@ -13,17 +13,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchTextField: UITextField!
     
-    let list: [StackOverflowData] = [
-                                        StackOverflowData(question_id: 1, title: "title1", link: "https://hogehoge.com/url1"),
-                                        StackOverflowData(question_id: 2, title: "title2", link: "https://hogehoge.com/url2"),
-                                        StackOverflowData(question_id: 3, title: "title3", link: "https://hogehoge.com/url3"),
-                                        StackOverflowData(question_id: 4, title: "title4", link: "https://hogehoge.com/url4"),
-                                        StackOverflowData(question_id: 5, title: "title5", link: "https://hogehoge.com/url5"),
-                                        StackOverflowData(question_id: 6, title: "title6", link: "https://hogehoge.com/url6"),
-                                        StackOverflowData(question_id: 7, title: "title7", link: "https://hogehoge.com/url7"),
-                                        StackOverflowData(question_id: 8, title: "title8", link: "https://hogehoge.com/url8"),
-                                        StackOverflowData(question_id: 9, title: "title9", link: "https://hogehoge.com/url9"),
-                                    ]
+    var list: [StackOverflowData] = [] {
+        didSet {
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +28,6 @@ class ViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         searchTextField.delegate = self
-        
         // TableViewの準備
         tableView.register(UINib(nibName: "CustomTableViewCell", bundle: nil),forCellReuseIdentifier:"cell")
     }
@@ -61,7 +56,28 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 extension ViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         searchTextField.resignFirstResponder()
+        self.getArticles(tag: searchTextField.text!)
         return true
+    }
+}
+
+// MARK: Private Method
+extension ViewController {
+    private func getArticles(tag: String) {
+        guard let url = URL(string: "https://api.stackexchange.com/2.2/questions?page=1%20&pagesize=100%20&order=desc%20&sort=activity%20&tagged=\(tag)%20&site=ja.stackoverflow") else {
+            print("URL failed.")
+            return
+        }
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        let task = URLSession.shared.dataTask(with: request, completionHandler: { (data, response, error) in
+            if let data = data {
+                let list = try! JSONDecoder().decode(StackOverflowDatas.self, from: data)
+                print(list)
+                self.list = list.items
+            }
+        })
+        task.resume()
     }
 }
 
