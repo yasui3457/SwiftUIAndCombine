@@ -3,15 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		8D87E2CA98B1A50CAC6F4AC3 /* Pods_StackOverflowListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4B7657FE8D8A3F4450A055 /* Pods_StackOverflowListTests.framework */; };
 		8F20C9E2F1C89F5D3B98E122 /* Pods_StackOverflowList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89A927AB4AC4711ACF08B53D /* Pods_StackOverflowList.framework */; };
+		A06658DD263D5A9300E285D0 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06658DC263D5A9300E285D0 /* ListViewModel.swift */; };
+		A06658E0263E7E3E00E285D0 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06658DE263E7E3E00E285D0 /* CustomTableViewCell.swift */; };
+		A06658E1263E7E3E00E285D0 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A06658DF263E7E3E00E285D0 /* CustomTableViewCell.xib */; };
+		A06658E3263F8A5100E285D0 /* StackOverflowDatas.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06658E2263F8A5100E285D0 /* StackOverflowDatas.swift */; };
+		A06658E5263FBAA700E285D0 /* ArticleFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06658E4263FBAA700E285D0 /* ArticleFetcher.swift */; };
 		A0916D6E263B6FD400C097E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0916D6D263B6FD400C097E3 /* AppDelegate.swift */; };
 		A0916D70263B6FD400C097E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0916D6F263B6FD400C097E3 /* SceneDelegate.swift */; };
-		A0916D72263B6FD400C097E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0916D71263B6FD400C097E3 /* ViewController.swift */; };
+		A0916D72263B6FD400C097E3 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0916D71263B6FD400C097E3 /* ListViewController.swift */; };
 		A0916D75263B6FD400C097E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0916D73263B6FD400C097E3 /* Main.storyboard */; };
 		A0916D77263B6FD400C097E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0916D76263B6FD400C097E3 /* Assets.xcassets */; };
 		A0916D7A263B6FD500C097E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0916D78263B6FD500C097E3 /* LaunchScreen.storyboard */; };
@@ -44,10 +49,15 @@
 		5B4F801F6CC84A1634753FEF /* Pods-StackOverflowList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackOverflowList.release.xcconfig"; path = "Target Support Files/Pods-StackOverflowList/Pods-StackOverflowList.release.xcconfig"; sourceTree = "<group>"; };
 		89A927AB4AC4711ACF08B53D /* Pods_StackOverflowList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StackOverflowList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B4B7657FE8D8A3F4450A055 /* Pods_StackOverflowListTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StackOverflowListTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A06658DC263D5A9300E285D0 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		A06658DE263E7E3E00E285D0 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		A06658DF263E7E3E00E285D0 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		A06658E2263F8A5100E285D0 /* StackOverflowDatas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverflowDatas.swift; sourceTree = "<group>"; };
+		A06658E4263FBAA700E285D0 /* ArticleFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleFetcher.swift; sourceTree = "<group>"; };
 		A0916D6A263B6FD400C097E3 /* StackOverflowList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackOverflowList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0916D6D263B6FD400C097E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0916D6F263B6FD400C097E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A0916D71263B6FD400C097E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A0916D71263B6FD400C097E3 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		A0916D74263B6FD400C097E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0916D76263B6FD400C097E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0916D79263B6FD500C097E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,6 +111,35 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A06658D9263D5A6700E285D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A0916D71263B6FD400C097E3 /* ListViewController.swift */,
+				A06658DE263E7E3E00E285D0 /* CustomTableViewCell.swift */,
+				A06658DF263E7E3E00E285D0 /* CustomTableViewCell.xib */,
+				A0916D73263B6FD400C097E3 /* Main.storyboard */,
+				A0916D78263B6FD500C097E3 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A06658DA263D5A7100E285D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A06658E2263F8A5100E285D0 /* StackOverflowDatas.swift */,
+				A06658E4263FBAA700E285D0 /* ArticleFetcher.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A06658DB263D5A7700E285D0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A06658DC263D5A9300E285D0 /* ListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		A0916D61263B6FD400C097E3 = {
 			isa = PBXGroup;
 			children = (
@@ -128,10 +167,10 @@
 			children = (
 				A0916D6D263B6FD400C097E3 /* AppDelegate.swift */,
 				A0916D6F263B6FD400C097E3 /* SceneDelegate.swift */,
-				A0916D71263B6FD400C097E3 /* ViewController.swift */,
-				A0916D73263B6FD400C097E3 /* Main.storyboard */,
+				A06658DA263D5A7100E285D0 /* Model */,
+				A06658D9263D5A6700E285D0 /* View */,
+				A06658DB263D5A7700E285D0 /* ViewModel */,
 				A0916D76263B6FD400C097E3 /* Assets.xcassets */,
-				A0916D78263B6FD500C097E3 /* LaunchScreen.storyboard */,
 				A0916D7B263B6FD500C097E3 /* Info.plist */,
 			);
 			path = StackOverflowList;
@@ -165,7 +204,6 @@
 				147192445A09AAF4B07BCA28 /* Pods-StackOverflowListTests.debug.xcconfig */,
 				32FFDD44F47733E37B89F4A1 /* Pods-StackOverflowListTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -279,6 +317,7 @@
 			files = (
 				A0916D7A263B6FD500C097E3 /* LaunchScreen.storyboard in Resources */,
 				A0916D77263B6FD400C097E3 /* Assets.xcassets in Resources */,
+				A06658E1263E7E3E00E285D0 /* CustomTableViewCell.xib in Resources */,
 				A0916D75263B6FD400C097E3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,9 +446,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0916D72263B6FD400C097E3 /* ViewController.swift in Sources */,
+				A0916D72263B6FD400C097E3 /* ListViewController.swift in Sources */,
+				A06658E0263E7E3E00E285D0 /* CustomTableViewCell.swift in Sources */,
 				A0916D6E263B6FD400C097E3 /* AppDelegate.swift in Sources */,
+				A06658DD263D5A9300E285D0 /* ListViewModel.swift in Sources */,
+				A06658E3263F8A5100E285D0 /* StackOverflowDatas.swift in Sources */,
 				A0916D70263B6FD400C097E3 /* SceneDelegate.swift in Sources */,
+				A06658E5263FBAA700E285D0 /* ArticleFetcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
